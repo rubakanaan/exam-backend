@@ -60,6 +60,7 @@ deleteFav = (req, res) => {
             data[idx].remove();
             DrinkModel.find({}, (error, data) => {
                 res.send(data);
+               
             }
             );
         }
